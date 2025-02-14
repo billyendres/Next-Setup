@@ -15,6 +15,10 @@ const State = () => {
     setClick(click + 1);
   };
 
+  const handleReset = () => {
+    setClick(0);
+  };
+
   return (
     <>
       <h1>
@@ -31,7 +35,7 @@ const State = () => {
       </div>
       <button
         style={{ color: "red", border: "2px solid red", padding: "0.5rem" }}
-        onClick={() => setClick(0)}
+        onClick={handleReset}
       >
         Reset count.
       </button>
